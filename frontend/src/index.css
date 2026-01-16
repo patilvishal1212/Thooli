@@ -1,42 +1,66 @@
 @import "tailwindcss";
 
-
 html {
     font-size: 14px;
 }
 
-@font-face {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: swap;
-    src: url('./assets/fonts/Jost/Jost-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Jost';
-    font-style: italic;
-    font-weight: 100 900;
-    font-display: swap;
-    src: url('./assets/fonts/Jost/Jost-Italic-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 300 700;
-    font-display: swap;
-    src: url('./assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
-}
-
-@theme {
-    --font-jost: 'Jost', ui-sans-serif, system-ui, sans-serif;
-    --font-quicksand: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
-}
-
-
+/* ============================= */
+/* Tailwind Custom Base Layer */
+/* ============================= */
 @layer base {
     .layout {
-        @apply max-w-[95%] md:max-w-[90%] lg:max-w-[85%] mx-auto
+        @apply max-w-[95%] md:max-w-[90%] lg:max-w-[85%] mx-auto;
     }
+}
+
+/* ============================= */
+/* Quicksand Font */
+/* ============================= */
+@font-face {
+    font-family: 'Quicksand';
+    src: url('https://fonts.gstatic.com/s/quicksand/v37/6xKtdSZaM9iE8KbpRA_hJFQNcOM.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ============================= */
+/* Alatsi Font */
+/* ============================= */
+@font-face {
+    font-family: 'Alatsi';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://thooli.in/wp-content/uploads/elementor/google-fonts/fonts/alatsi-tk3iwkujaxq2nln2fd8ghe4.woff2') format('woff2');
+}
+
+/* ============================= */
+/* Eicons */
+/* ============================= */
+@font-face {
+    font-family: 'eicons';
+    src: 
+        url('../fonts/eicons.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ============================= */
+/* Font Awesome 5 Free (ONLY ONCE) */
+/* ============================= */
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: 
+        url('../webfonts/fa-solid-900.ttf') format('truetype');
+}
+
+.fa,
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
 }
