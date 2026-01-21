@@ -1,5 +1,6 @@
 import React from 'react'
 import Home from '../components/pages/Home/Home'
+import Contact from '../components/pages/Contact/Contact'
 // import { Routes, Route } from "react-router-dom";
 
 const AppRoutes = () => {
@@ -12,7 +13,8 @@ const AppRoutes = () => {
     //     <Route path="/*" element={<PageNotFound />} />
     //   </Routes>
     <div>
-        <Home/>
+        {/* <Home/> */}
+        <Contact/>
     </div>
   )
 }
